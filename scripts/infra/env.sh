@@ -20,7 +20,7 @@ export UNIQUE_IDENTIFIER=${UNIQUE_IDENTIFIER:-${GITHUB_USER:-$(whoami)}}
 
 echo "Using unique identifier is: $UNIQUE_IDENTIFIER"
 echo "You can override it by setting it manually before running this script:"
-echo "export UNIQUE_IDENTIFIER=<your-unique-identifier>"
+echo "export UNIQUE_IDENTIFIER=ahmedayed89"
 
 export REGISTRY="crjavaruntimes${UNIQUE_IDENTIFIER}"
 export IMAGES_TAG="1.0"
