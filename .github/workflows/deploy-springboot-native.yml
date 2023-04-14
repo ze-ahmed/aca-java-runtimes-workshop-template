@@ -10,7 +10,7 @@ on:
 
 env:
   # Replace with your registry URL
-  REGISTRY_URL: crjavaruntimessinedied.azurecr.io
+  REGISTRY_URL: crjavaruntimesahmedayed89.azurecr.io
   PROJECT: java-runtimes
   RESOURCE_GROUP: rg-java-runtimes
 
