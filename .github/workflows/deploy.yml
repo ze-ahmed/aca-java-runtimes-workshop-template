@@ -12,7 +12,7 @@ concurrency:
 
 env:
   # Replace with your registry URL
-  REGISTRY_URL: rjavaruntimesahmedayed89.azurecr.io
+  REGISTRY_URL: crjavaruntimesahmedayed89.azurecr.io
   PROJECT: java-runtimes
   RESOURCE_GROUP: rg-java-runtimes
   QUARKUS_APP: quarkus-app
@@ -88,7 +88,7 @@ jobs:
 
     # This job needs to run after the "build" job, so we'll add a dependency on it
     needs: build
-    
+
     steps:
       # Log in to Azure to be able to deploy our apps
       - name: Azure Login
@@ -102,7 +102,7 @@ jobs:
         with:
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
-            
+
             az containerapp update \
               --name ${{ env.QUARKUS_APP }} \
               --resource-group ${{ env.RESOURCE_GROUP }} \
